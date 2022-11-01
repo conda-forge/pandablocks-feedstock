@@ -1,5 +1,5 @@
 {% set name = "pandablocks" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pandablocks-{{ version }}.tar.gz
-  sha256: 09aa9615d2a9dd37a4adf5c3fe7f1f230412b654803ffb9c942dc577a7629d72
+  sha256: e50b9dd9aa2fb92b2952f7ca7d5d1f6fc21edb56f66ee7dc9a77dddd3a4db604
 
 build:
   number: 0
