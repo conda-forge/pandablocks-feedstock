@@ -1,11 +1,11 @@
-About pandablocks
-=================
+About pandablocks-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pandablocks-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/PandABlocks/PandABlocks-client
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pandablocks-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Python client to control and data ports of the PandABlocks TCP server
 
