@@ -21,6 +21,9 @@ requirements:
   host:
     - pip
     - python >=3.7
+    - setuptools >=64
+    - setuptools_scm >=6.2
+    - wheel
   run:
     - click
     - numpy
