@@ -1,5 +1,5 @@
 {% set name = "pandablocks" %}
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pandablocks-{{ version }}.tar.gz
-  sha256: 06578ae98e3a8f50c6f26f0b7c4039931898dbdd8074a9a27f9228bde975321f
+  sha256: b35945143735955972471b2d59aff11f0ddcaf71637e90c839917be69e2704a5
 
 build:
   number: 0
@@ -21,6 +21,9 @@ requirements:
   host:
     - pip
     - python >=3.7
+    - setuptools >=64
+    - setuptools_scm >=6.2
+    - wheel
   run:
     - click
     - numpy
@@ -33,6 +36,7 @@ test:
   commands:
     - pip check
     - pandablocks --help
+    - pandablocks --version
   requires:
     - pip
 
