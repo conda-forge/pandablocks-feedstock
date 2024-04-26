@@ -28,7 +28,6 @@ requirements:
     - click
     - numpy
     - python >=3.7
-    - importlib-metadata <5.0
 
 test:
   imports:
