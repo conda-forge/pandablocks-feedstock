@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pandablocks-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pandablocks-{{ version }}.tar.gz
   sha256: d0edee2a00c1148038bc35c301787192c7bfb27d302145d49a29986db5e9375a
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - pandablocks = pandablocks.cli:cli
@@ -20,14 +20,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools >=64
     - setuptools_scm >=6.2
     - wheel
   run:
     - click
     - numpy
-    - python >=3.7
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -38,6 +38,7 @@ test:
     - pandablocks --version
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/PandABlocks/PandABlocks-client
