@@ -36,15 +36,14 @@ tests:
   - python:
       imports:
         - pandablocks
-      python_version: ${{ python_min }}.*
-  - requirements:
-      run:
-        - pip
-        - python ${{ python_min }}.*
-    script:
-      - pip check
+      python_version: ["${{ python_min }}.*", "3.*"]
+      pip_check: true
+  - script:
       - pandablocks --help
       - pandablocks --version
+    requirements:
+      run:
+        - python ${{ python_min }}.*
 
 about:
   summary: A Python client to control and data ports of the PandABlocks TCP server
